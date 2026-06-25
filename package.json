@@ -1,6 +1,6 @@
 {
   "name": "@interactkit/distill",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Distill an LLM's entity-extraction ability into a fast, deterministic code extractor (label → learn → code).",
   "type": "module",
   "main": "dist/define.js",
