@@ -103,7 +103,7 @@ export class InitCommand {
 
 // ─── Template files ──────────────────────────────────────────────────────────
 // Pinned to the version that scaffolded the project.
-const DISTILL_VERSION = "1.0.2";
+const DISTILL_VERSION = "2.0.0";
 
 function packageJson(name: string): string {
   // A minimal, runnable project. distill is a dependency so the typed config
