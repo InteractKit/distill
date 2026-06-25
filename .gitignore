@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Secrets / local env
+.env
+.env.local
+.env.*.local
+
+# Build artifacts produced by `entitag build` (e.g. under examples/*/).
+# These are regenerated and should never be committed.
+extractor.gen.ts
+extractor.gen.meta.json
+.distills/
+cache.jsonl
+
+# Logs / OS junk
+*.log
+.DS_Store
+
+*.tgz

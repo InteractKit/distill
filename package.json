@@ -1,0 +1,66 @@
+{
+  "name": "@interactkit/distill",
+  "version": "2.0.0",
+  "description": "Distill an LLM's entity-extraction ability into a fast, deterministic code extractor (label → learn → code).",
+  "type": "module",
+  "main": "dist/define.js",
+  "types": "dist/define.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/define.d.ts",
+      "default": "./dist/define.js"
+    }
+  },
+  "bin": {
+    "distill": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "distill": "tsx src/index.ts",
+    "test": "tsx src/__tests__/DiffEngine.test.ts && tsx src/__tests__/InputSource.test.ts && tsx src/__tests__/Evaluator.test.ts && tsx src/__tests__/FailureIndex.test.ts",
+    "typecheck": "tsc --noEmit",
+    "prepare": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InteractKit/distill.git"
+  },
+  "homepage": "https://github.com/InteractKit/distill#readme",
+  "bugs": {
+    "url": "https://github.com/InteractKit/distill/issues"
+  },
+  "keywords": [
+    "ner",
+    "entity-extraction",
+    "llm",
+    "code-generation",
+    "openai",
+    "anthropic",
+    "extraction",
+    "cli"
+  ],
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.86",
+    "@ai-sdk/google": "^3.0.83",
+    "@ai-sdk/openai": "^3.0.74",
+    "ai": "^6.0.209",
+    "commander": "^14.0.3",
+    "dotenv": "^17.4.2",
+    "ollama-ai-provider-v2": "^3.6.0",
+    "tsx": "^4.22.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^6.0.3"
+  }
+}
